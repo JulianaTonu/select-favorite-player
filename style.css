@@ -7,6 +7,11 @@ body{
     font-family: 'Lobster', cursive; ;
 }
 
-input{
-    width: 10px;
+p{
+    font-size: 15px;
+}
+
+.btn{
+    background-color: rgb(18, 18, 74);
+    color: aliceblue;
 }
