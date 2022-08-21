@@ -6,3 +6,7 @@ body{
 .text-info{
     font-family: 'Lobster', cursive; ;
 }
+
+input{
+    width: 10px;
+}
