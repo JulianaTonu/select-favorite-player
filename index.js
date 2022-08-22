@@ -1,19 +1,16 @@
 
 const playerArray=[];
 
+
 function display(playerlist){
     const totalPlayer =document.getElementById('total-player')
     totalPlayer.innerHTML ='';
-
+    
     for(let i= 0; i<playerlist.length; i++){
-        // console.log('playerArray',playerArray[i])
-    
+       
     const name =playerArray[i]
-    // const namelLenght = parseInt(name) 
-    // console.log(namelLenght)
+    // console.log('name',name)
     
-    
-
     const ol =document.createElement('ol')
     ol.innerHTML =`
     
@@ -22,9 +19,10 @@ function display(playerlist){
     `
     
     totalPlayer.appendChild(ol);
+   
+}
+}
 
-}
-}
 var buttons = document.getElementsByTagName('button');
 for(let i=0;i<buttons.length;i++){
     buttons[i].addEventListener('click', function(event){
@@ -38,25 +36,23 @@ function selectPlayer(player){
     
     const playerName=player.parentNode.children[0].innerText
     
-    
+    if(playerArray.length <5){
+        playerArray.push(playerName);
+        
+    }else{
+        alert("Sorry! You cannot add more then  5 players")
+      
+    }
+    display(playerArray);
 
-playerArray.push(playerName);
-// console.log(playerArray)
-// console.log(playerArray.length)
 
-const totalPlayer =document.getElementById('total-player')
 totalPlayer.innerText =playerArray.length
-console.log('totalplayer',totalPlayer)
-display(playerArray);
+const totalPlayer =document.getElementById('total-player')
 
+console.log('totalplayer',totalPlayer)
 
 console.log('playerArray',playerArray.length)
 
-if(playerArray.length >5){
-    alert("Please just select  5 players")
-}else{
-    return;
-}
 
 }
 
