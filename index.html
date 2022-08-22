@@ -43,7 +43,8 @@
                             <p class="">36 Goals</p>
                             <p class="ms-3">120 Assist</p></div>
 
-                          <a href="#" class="btn btn-info px-5 mb-3" id="p1-btn" onclick="selectPlayer(this)" >SELECT</a>
+                          <button class="btn btn-info px-5 mb-3 " onclick="selectPlayer(this)">SELECT</button>
+                         
                         </div>
                       </div>
 <!-- // player2 -->
@@ -56,7 +57,7 @@
                          <div class="d-flex ms-5 mt-3"> 
                             <p class="">36 Goals</p>
                             <p class="ms-3">120 Assist</p></div>
-                          <a href="#" class="btn btn-info px-5 mb-3" id="p2-btn" onclick="selectPlayer(this)">SELECT</a>
+                            <button class="btn btn-info px-5 mb-3 " onclick="selectPlayer(this)">SELECT</button>
                         </div>
                       </div>
  <!-- // player3 -->                     
@@ -69,7 +70,7 @@
                          <div class="d-flex ms-5 mt-3"> 
                             <p class="">36 Goals</p>
                             <p class="ms-3">120 Assist</p></div>
-                          <a href="#" class="btn btn-info px-5 mb-3" id="p3-btn" onclick="selectPlayer(this)">SELECT</a>
+                            <button class="btn btn-info px-5 mb-3 " onclick="selectPlayer(this)">SELECT</button>
                         </div>
                       </div>
  <!-- // player4 -->                     
@@ -82,7 +83,7 @@
                          <div class="d-flex ms-5 mt-3"> 
                             <p class="">36 Goals</p>
                             <p class="ms-3">120 Assist</p></div>
-                          <a href="#" class="btn btn-info px-5 mb-3" id="p4-btn" onclick="selectPlayer(this)" >SELECT</a>
+                            <button class="btn btn-info px-5 mb-3 " onclick="selectPlayer(this)">SELECT</button>
                         </div>
                       </div>
  <!-- // player5 -->                     
@@ -95,7 +96,7 @@
                          <div class="d-flex ms-5 mt-3"> 
                             <p class="">36 Goals</p>
                             <p class="ms-3">120 Assist</p></div>
-                          <a href="#" class="btn btn-info px-5 mb-3" id="p5-btn" onclick="selectPlayer(this)">SELECT</a>
+                            <button class="btn btn-info px-5 mb-3 " onclick="selectPlayer(this)">SELECT</button>
                         </div>
                       </div>
 <!-- // player6 -->                      
@@ -108,7 +109,7 @@
                          <div class="d-flex ms-5 mt-3"> 
                             <p class="">36 Goals</p>
                             <p class="ms-3">120 Assist</p></div>
-                          <a href="#" class="btn btn-info px-5 mb-3" id="p6-btn" onclick="selectPlayer(this)">SELECT</a>
+                            <button class="btn btn-info px-5 mb-3 " onclick="selectPlayer(this)">SELECT</button>
                         </div>
                       </div>
 
@@ -139,16 +140,16 @@
                                 <input id="per-player-field" type="text" value="" size=7>
                             </div>
                         </div>
-
-                        <a href="#" class="btn btn-info px-5 mb-3" id="calculate">Calculate</a>
+                        <input type="button" class="btn btn-info px-5 mb-3" id="calculate" value="Calculate">
+                        
 
                         <div class="row mb-3 " >
 
-                            <div class="col-9" >
+                            <div class="col-8" >
                                 <p>Player Expenses:</p>
                             </div>
-                            <div class="col " id="player-expenses" >
-                                
+                            <div class="col "  >
+                              <span id="player-expenses">00</span>
                             </div>
                         </div>
                         <div class="row mb-3 ">
@@ -157,7 +158,7 @@
                                 <p>Manager</p>
                             </div>
                             <div class="col " >
-                                <input type="text" value="" size=7>
+                                <input id="manager" type="text" value="" size=7>
                             </div>
                         </div>
                         <div class="row mb-3 ">
@@ -166,18 +167,18 @@
                                 <p>Coach</p>
                             </div>
                             <div class="col " >
-                                <input type="text" value="" size=7>
+                                <input id="coach" type="text" value="" size=7>
                             </div>
                         </div>
 
-                        <a href="#" class="btn btn-info   ">Calculate Total</a>
+                        <input type="button" class="btn btn-info px-5 mb-3" id="calculate-total" value="Calculate Total">
                         <div class="row mt-3 ">
 
-                            <div class="col-9" >
-                                <p>Total:</p>
+                            <div class="col-7" >
+                                <p>Total:   </p>
                             </div>
-                            <div class="col " >
-                                00
+                            <div class="col "  >
+                              <p>$ <span id="total">00</span></p>
                             </div>
                         </div>
 

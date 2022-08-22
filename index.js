@@ -1,3 +1,4 @@
+
 const playerArray=[];
 
 function display(playerlist){
@@ -20,12 +21,17 @@ function display(playerlist){
          
     `
     
-    totalPlayer.appendChild(ol)
-         
-    
+    totalPlayer.appendChild(ol);
 
 }
 }
+var buttons = document.getElementsByTagName('button');
+for(let i=0;i<buttons.length;i++){
+    buttons[i].addEventListener('click', function(event){
+        event.target.disabled = true;
+    });
+}
+
 
 function selectPlayer(player){
 
@@ -46,8 +52,8 @@ display(playerArray);
 
 console.log('playerArray',playerArray.length)
 
-if(playerArray.length >=5){
-    alert("player cannot select more than 5")
+if(playerArray.length >5){
+    alert("Please just select  5 players")
 }else{
     return;
 }
@@ -69,9 +75,43 @@ console.log('perPlayer' ,perPlayerTotal)
 
 // Player Expenses 
 
-const playerInputExpenses =document.getElementById('player-expenses')
-const playerExpensesstring =playerInputExpenses.innerText
+const playerTextExpenses =document.getElementById('player-expenses')
+const playerExpensesstring =playerTextExpenses.innerText
 const playerExpenses =parseInt(playerExpensesstring)
 
-playerInputExpenses.innerText =perPlayerTotal;
+playerTextExpenses.innerText = perPlayerTotal;
+
+// const playerTextExpenses =getTextElementValueById('player-expenses')
+// playerTextExpenses.innerText =perPlayerTotal;
+
+
+
+
+
 })
+
+document.getElementById('calculate-total').addEventListener('click',function(){
+
+
+    // Manager
+const managerInputAmount =document.getElementById('manager')
+const managerInputAmountString =managerInputAmount.value ;
+const managerAmount =parseInt(managerInputAmountString);
+
+//Coach 
+const coachInputAmount =document.getElementById('coach')
+const coachInputAmountString =coachInputAmount.value ;
+const coachAmount =parseInt(coachInputAmountString);
+
+//Total
+const total = perPlayerTotal + managerAmount + coachAmount
+
+const totalTextAmount =document.getElementById('total')
+const totalTextAmountstring =totalTextAmount.innerText
+const totalAmount =parseInt(totalTextAmountstring)
+
+totalTextAmount.innerText = total;
+
+console.log('total',total)
+})
+
