@@ -67,7 +67,11 @@ const totalPlayer =playerArray.length
 perPlayerTotal =  perPlayerAmount * totalPlayer
 console.log('perPlayer' ,perPlayerTotal)
 
-// const perPlayer =document.getElementById('per-player-field')
-// const perPlayerfieldString =perPlayer.value ;
-// const perPlayerAmount =parseInt(perPlayerfieldString)
+// Player Expenses 
+
+const playerInputExpenses =document.getElementById('player-expenses')
+const playerExpensesstring =playerInputExpenses.innerText
+const playerExpenses =parseInt(playerExpensesstring)
+
+playerInputExpenses.innerText =perPlayerTotal;
 })
