@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handlee&family=Inter:wght@300&family=Lobster&family=Lobster+Two:ital@1&family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handlee&family=Inter:wght@300&family=Lobster&family=Lobster+Two:ital@1&family=Poppins:wght@300&family=Roboto:wght@300;500&display=swap');
 
 body{
     font-family: 'Roboto', sans-serif;
 }
 .text-info{
-    font-family: 'Lobster', cursive; ;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 p{
