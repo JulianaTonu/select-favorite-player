@@ -41,7 +41,7 @@ function selectPlayer(player){
         playerArray.push(playerName);
         
     }else{
-        alert("Sorry! You cannot select more then  5 players")
+        alert("Sorry! You cannot select more than  5 players")
       
     }
     display(playerArray);
